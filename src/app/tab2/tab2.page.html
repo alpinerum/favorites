@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Songs
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +13,30 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-card>
+    <ion-list>
+      <ion-list-header>User's Favourite Songs</ion-list-header>
+      <ion-reorder-group (ionItemReorder)="handleReorder($event)" disabled="false">
+        <ion-item>
+          <ion-label>UNKLE - The Answer</ion-label> 
+          <ion-reorder></ion-reorder>
+        </ion-item>
+        <ion-item>
+          <ion-label>Breaking Benjamin - Blow Me Away</ion-label>
+          <ion-reorder></ion-reorder>
+        </ion-item>
+        <ion-item>
+          <ion-label>Kanye West - Power</ion-label>
+          <ion-reorder></ion-reorder>
+        </ion-item>
+        <ion-item>
+          <ion-label>Coldplay - Viva la Vida</ion-label>
+          <ion-reorder></ion-reorder>
+        </ion-item>
+      </ion-reorder-group>
+      
+    </ion-list>
+  </ion-card>
+
+  <!-- <app-explore-container name="Tab 2 page"></app-explore-container> -->
 </ion-content>
